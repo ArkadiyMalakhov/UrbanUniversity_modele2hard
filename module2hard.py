@@ -6,8 +6,8 @@ def gen_psw(n):
                 psw += str(i) + ' ' + str(j) + ', '
     return psw
 for n in range(3, 21):
-    psw = gen_psw(n)[:-1]
+    psw = gen_psw(n)
     psw = psw[:-1]
-    print(f'{n} - {psw}')
+    print(f'{n} - {psw[:-1]}')
 
 
